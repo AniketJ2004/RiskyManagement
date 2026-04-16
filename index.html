@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Asia Risk Platform</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Leaflet Map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<!-- Chart JS -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header>
+<div class="logo">Asia Risk Platform</div>
+
+<nav>
+<a href="#">Risk Database</a>
+<a href="#">Risk Assessment Tool</a>
+<a href="#">Knowledge Repository</a>
+</nav>
+
+<div class="user">Info Portfolio</div>
+</header>
+
+
+<div class="container">
+
+<!-- LEFT SIDEBAR -->
+<div class="sidebar">
+
+<h3>Location</h3>
+
+<select>
+<option>ASEAN</option>
+</select>
+
+<select>
+<option>Singapore, Thailand</option>
+</select>
+
+<select>
+<option>Select Province/State</option>
+</select>
+
+<select>
+<option>Select Country/District</option>
+</select>
+
+<select>
+<option>Risk Type</option>
+</select>
+
+<button class="submit">Submit</button>
+
+<h3>Knowledge Repository</h3>
+<p>Top 3 Risks – Solutions</p>
+<div class="repo">
+
+   
+<p>Ventilation Improvements</p>
+
+
+<p>Contact Tracing</p>
+<p>Annual Flu Vaccination</p>
+</div>
+
+</div>
+
+
+<!-- MAP SECTION -->
+<div id="map"></div>
+
+
+<!-- RIGHT PANEL -->
+<div class="right-panel">
+
+<div class="tabs">
+<button>Exposure</button>
+<button>Loss</button>
+<button>Incident</button>
+<button>Protection Gap</button>
+<button>Insurance</button>
+</div>
+
+<div class="chart-box">
+<h4>Nominal GDP</h4>
+<canvas id="gdpChart"></canvas>
+</div>
+
+<div class="chart-box">
+<h4>Population</h4>
+<canvas id="populationChart"></canvas>
+</div>
+
+</div>
+
+</div>
+
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
